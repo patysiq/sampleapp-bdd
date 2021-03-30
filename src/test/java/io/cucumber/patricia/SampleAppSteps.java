@@ -110,6 +110,7 @@ public class SampleAppSteps {
         public void verifico_a_mensagem(String string) throws InterruptedException{
             Thread.sleep(10000);
             assertEquals(string, Settings.cssSelectors("h2").get(0).getText());
+            Settings.closeBrowser();
         }
 
     
